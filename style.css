@@ -1,0 +1,29 @@
+
+section .Elemento1, .Elemento2, .Elemento3{
+    color: rebeccapurple;
+}
+section :IS(.Elemento1, .Elemento2, .Elemento3){
+    color: red;
+}
+section :where(.Elemento1, .Elemento2, .Elemento3){
+    color: blue;
+}
+ul+div{
+background-color: aqua;
+}
+ul:has(+div){
+    background-color:#585;
+    color: red;
+}
+
+label:has(+input:valid){
+color: #585;
+font-weight:bold;
+text-decoration: underline;
+}
+
+label:has(+input:invalid){
+color:red;
+font-weight:bold;
+text-decoration: underline;
+}
